@@ -1,14 +1,14 @@
 <?php
 require "../../vendor/autoload.php";
 
-use App\Controller\UsuarioController;
+use App\Controller\ProdutoController;
 use App\Http\HttpHeader;
-use App\Repository\UsuarioRepository;
+use App\Repository\ProdutoRepository;
 
 HttpHeader::setDefaultHeaders();
 
-$repository = new UsuarioRepository(); 
-$controller = new UsuarioController($repository);
+$repository = new ProdutoRepository(); 
+$controller = new ProdutoController($repository);
 
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit(0);

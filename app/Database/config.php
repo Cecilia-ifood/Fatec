@@ -10,7 +10,7 @@ return [
             'charset' => 'utf8'
         ],
         'sqlite' => [
-            'path' => '/workspaces/Fatec/app/Database/agenda.db',
+            'path' => '/workspaces/Fatec/app/Database/produtos.db',
         ],
         'sqlsrv' => [
             'host' => 'localhost',
